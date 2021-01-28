@@ -44,7 +44,7 @@ Make sure you have the following is installed:
 
 ### 编译
 
-将本仓库下的三个文件夹移动到catkin_wp/src下
+将本仓库下的三个文件夹移动到catkin_wp/src下，然后执行下面操作
 
 ```shell
 // 创建环境变量 src中运行
@@ -117,6 +117,10 @@ roslaunch linefit_ground_segmentation_ros segmentation.launch
 
 ![arch](https://cdn.nlark.com/yuque/0/2021/png/232596/1611807271441-3826b794-9a49-4ca5-879d-8206fbab4190.png)
 
+### Reference
+
+* https://github.com/sysuzyc/road_detecting
+* 论文：https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5548059&tag=1
 
 ### License
 
