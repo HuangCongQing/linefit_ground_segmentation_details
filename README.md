@@ -121,7 +121,10 @@ roslaunch linefit_ground_segmentation_ros segmentation.launch
 
 ### Reference
 
-* https://github.com/sysuzyc/road_detecting
+* 项目代码：https://github.com/lorenwel/linefit_ground_segmentation
+* 依赖1：git clone https://github.com/catkin/catkin_simple
+* 依赖2：https://github.com/google/glog
+* 注解：https://github.com/sysuzyc/road_detecting
 * 论文：https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5548059&tag=1
 
 ### License
