@@ -42,7 +42,29 @@ Make sure you have the following is installed:
 * kitti_2011_09_26_drive_0005_synced.bag
 * 链接: https://pan.baidu.com/s/1sYWHzF11RpyEW25cQ_iNGA  密码: b6pd
 
-### Start
+### 编译
+
+将本仓库下的三个文件夹移动到catkin_wp/src下
+
+```shell
+// 创建环境变量 src中运行
+mkdir -p catkin_wp/src
+cd catkin_wp/src
+catkin_init_workspace
+
+// 编译（需要回到工作空间catkin_wp）
+cd ..
+catkin_make  // 产生build和devel文件夹
+
+
+//设置环境变量，找到src里的功能包(每个新的shell窗口都要执行以下source devel/setup.bash)
+source devel/setup.bash  // 不同shell，不同哦.sh  .zsh           通过设置gedit ~/.zshrc，不用每次都source
+```
+
+详情可参考：https://www.yuque.com/docs/share/e59d5c91-b46d-426a-9957-cd262f5fc241?# 《09.创建工作空间与功能包※※※》
+
+
+### Run运行
 
 主要代码路径：
 
@@ -73,6 +95,10 @@ rosbag play path/kitti_2011_09_26_drive_0005_synced.bag --loop
 ```
 rviz
 ```
+
+注意：Fixed Frame： **velo_link**
+
+
 
 ![arch](https://cdn.nlark.com/yuque/0/2021/png/232596/1611807439212-954eb16d-fdc6-49db-8647-b4df4d4115f7.png)
 
