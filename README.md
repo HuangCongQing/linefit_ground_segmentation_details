@@ -2,7 +2,6 @@
 
 快速3D点云分割论文代码（带注解）：Fast segmentation of 3d point clouds for ground vehicles
 
-
 Implementation of the ground segmentation algorithm proposed in
 
 ```
@@ -16,11 +15,9 @@ Implementation of the ground segmentation algorithm proposed in
 }
 ```
 
-
 参考：https://github.com/lorenwel/linefit_ground_segmentation
 
 @[双愚](https://github.com/HuangCongQing/) , 若fork或star请注明来源
-
 
 ### Intro
 
@@ -64,6 +61,19 @@ source devel/setup.bash  // 不同shell，不同哦.sh  .zsh           通过设
 详情可参考：https://www.yuque.com/docs/share/e59d5c91-b46d-426a-9957-cd262f5fc241?# 《09.创建工作空间与功能包※※※》
 
 
+### 修改配置文件
+
+举例：修改输入topic
+
+```bash
+cd linefit_ground_segmentation/linefit_ground_segmentation_ros/launch/segmentation.launch
+
+#第8行    <param name="input_topic" value="/kitti/velo/pointcloud" />修改你的雷达点云话题
+<param name="input_topic" value="/kitti/velo/pointcloud" />   <!-- 输入topic -->
+
+```
+
+
 ### Run运行
 
 主要代码路径：
@@ -71,7 +81,6 @@ source devel/setup.bash  // 不同shell，不同哦.sh  .zsh           通过设
 linefit_ground_segmentation/linefit_ground_segmentation/src
 
 * [linefit_ground_segmentation](linefit_ground_segmentation/linefit_ground_segmentation/src)
-
 
 ##### Terminal 1
 
@@ -86,8 +95,6 @@ roscore
 ```
 # kitti官方  注意修改路径path
 rosbag play path/kitti_2011_09_26_drive_0005_synced.bag --loop
-
-
 ```
 
 ##### Terminal 3
@@ -99,8 +106,6 @@ rviz
 可使用此配置 `config.rviz`
 
 注意：Fixed Frame： **velo_link**
-
-
 
 ![arch](https://cdn.nlark.com/yuque/0/2021/png/232596/1611807439212-954eb16d-fdc6-49db-8647-b4df4d4115f7.png)
 
