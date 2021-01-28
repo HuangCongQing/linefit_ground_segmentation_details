@@ -24,7 +24,7 @@ Implementation of the ground segmentation algorithm proposed in
 
 ### Intro
 
-个人笔记：
+个人笔记：https://www.yuque.com/huangzhongqing/ngixrc/fxk7gt
 
 ### Setup
 
