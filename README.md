@@ -96,6 +96,8 @@ rosbag play path/kitti_2011_09_26_drive_0005_synced.bag --loop
 rviz
 ```
 
+可使用此配置 `config.rviz`
+
 注意：Fixed Frame： **velo_link**
 
 
