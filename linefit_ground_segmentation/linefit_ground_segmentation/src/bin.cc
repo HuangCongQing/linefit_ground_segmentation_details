@@ -12,6 +12,7 @@ void Bin::addPoint(const pcl::PointXYZ& point) {
   addPoint(d, point.z);
 }
 
+/*添加点*/
 void Bin::addPoint(const double& d, const double& z) {
   has_point_ = true;
   if (z < min_z) {
@@ -20,6 +21,7 @@ void Bin::addPoint(const double& d, const double& z) {
   }
 }
 
+/*判断是否有点，如果有点存在的话，将我们之前算好的min_z和min_z_range传入到point之中*/
 Bin::MinZPoint Bin::getMinZPoint() {
   MinZPoint point;
 
