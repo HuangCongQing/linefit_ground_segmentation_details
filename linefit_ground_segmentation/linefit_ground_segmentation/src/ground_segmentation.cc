@@ -68,7 +68,7 @@ GroundSegmentation::GroundSegmentation(const GroundSegmentationParams& params) :
 void GroundSegmentation::segment(const PointCloud& cloud, std::vector<int>* segmentation) {
   /*初始化一些比较基础的东西*/
   std::cout << "Segmenting cloud with " << cloud.size() << " points...\n";
-  std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+  std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();   // 起始时间
   segmentation->clear();
   segmentation->resize(cloud.size(), 0);
   bin_index_.resize(cloud.size());
@@ -105,7 +105,7 @@ void GroundSegmentation::segment(const PointCloud& cloud, std::vector<int>* segm
   }
   std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double, std::milli> fp_ms = end - start;
-  std::cout << "Done! Took " << fp_ms.count() << "ms\n";
+  std::cout << "Done! Took " << fp_ms.count() << "ms\n";  // 统计时间
 }
 
 /*获取到线*/
