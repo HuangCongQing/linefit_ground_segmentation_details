@@ -6,8 +6,9 @@ find_package(catkin_simple 0.1.0 REQUIRED )
 catkin_simple(ALL_DEPS_REQUIRED)
 
 add_definitions(-std=c++11 -g)
+set(CMAKE_CXX_STANDARD 14)
 
-find_package(PCL REQUIRED)
+find_package(PCL 1.8 REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})

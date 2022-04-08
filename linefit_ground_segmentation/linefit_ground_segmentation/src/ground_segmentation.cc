@@ -5,7 +5,7 @@
 #include <list>
 #include <memory>
 #include <thread>
-
+#include <boost/thread/thread.hpp>
 /*可视化点云*/
 void GroundSegmentation::visualizePointCloud(const PointCloud::ConstPtr& cloud,
                                              const std::string& id) {
