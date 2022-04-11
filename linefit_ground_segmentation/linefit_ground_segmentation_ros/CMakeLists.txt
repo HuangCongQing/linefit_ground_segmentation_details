@@ -9,7 +9,7 @@ find_library(GLOG_PATH glog)
 add_definitions(-std=c++11 -g)
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(PCL 1.8 REQUIRED)
+find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
