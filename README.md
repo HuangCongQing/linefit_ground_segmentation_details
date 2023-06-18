@@ -1,4 +1,4 @@
-# linefit_ground_segmentation_details
+![image](https://github.com/HuangCongQing/linefit_ground_segmentation_details/assets/20675770/80a56eb3-d44c-40d2-8005-058933a46255)# linefit_ground_segmentation_details
 
 快速3D点云分割论文代码（带注解）：Fast segmentation of 3d point clouds for ground vehicles
 
@@ -16,6 +16,8 @@ Implementation of the ground segmentation algorithm proposed in
 ```
 
 参考：https://github.com/lorenwel/linefit_ground_segmentation
+
+**相关算法（带中文详细注解）：https://github.com/HuangCongQing/plane_fit_ground_filter**
 
 @[双愚](https://github.com/HuangCongQing/) , 若fork或star请注明来源
 
